@@ -22,6 +22,9 @@ mongoose.connect(MONGODB_URI, {
 })
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('Error connecting to MongoDB:', err));
+app.get("/", (req, res) => {
+    res.send("Backend is running!");
+});
 
 // Post route for new user
 app.post('/newUser', async (req, res) => {
