@@ -8,7 +8,7 @@ const UserLeaderboard = ({ onLoginClick }) => {
     fetchLeaderboard();
   }, []);
 
-  const backendHost = import.meta.env.VITE_BACKEND_HOST;
+  const backendHost = import.process.env.VITE_BACKEND_HOST;
 
   const fetchLeaderboard = async () => {
     try {

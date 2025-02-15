@@ -9,7 +9,7 @@ const AdminDashboard = () => {
     rollNumber: '',
     points: 0,
   });
-  const backendHost = import.meta.env.VITE_BACKEND_HOST;
+  const backendHost = import.process.env.VITE_BACKEND_HOST;
 
 
   // Maintain separate points state for each user

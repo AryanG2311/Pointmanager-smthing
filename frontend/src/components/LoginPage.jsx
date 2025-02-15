@@ -16,7 +16,7 @@ const AdminLogin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const backendHost = import.meta.env.VITE_BACKEND_HOST;
+    const backendHost = import.process.env.VITE_BACKEND_HOST;
 
 
     try {
