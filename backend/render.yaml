@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pointmanager-backend
+    runtime: node
+    envVars:
+      - key: MONGODB_URI
+        value: "mongodb+srv://anumaancs:pagal@leaderboard.hhnrc.mongodb.net/?retryWrites=true&w=majority&appName=leaderboard"
+      - key: PORT
+        value: "9000"
+    buildCommand: "npm install"
+    startCommand: "npm start"
