@@ -3,6 +3,13 @@
     {
       "source": "/api/:path*",
       "destination": "https://pointmanager-smthing-jgjt.onrender.com/api/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://pointmanager-smthing-jgjt.onrender.com/:path*"
     }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
   ]
 }
