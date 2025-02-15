@@ -9,7 +9,8 @@ const AdminDashboard = () => {
     rollNumber: '',
     points: 0,
   });
-  const backendHost = process.env.VITE_BACKEND_HOST;
+  const backendHost ="https://pointmanager-smthing-jgjt.onrender.com";
+
 
 
   // Maintain separate points state for each user

@@ -16,8 +16,7 @@ const AdminLogin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const backendHost = process.env.VITE_BACKEND_HOST;
-
+    const backendHost ="https://pointmanager-smthing-jgjt.onrender.com";
 
     try {
       const response = await axios.post(`${backendHost}/adminAuth`, {

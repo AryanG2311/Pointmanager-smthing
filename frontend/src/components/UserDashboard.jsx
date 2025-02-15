@@ -8,7 +8,7 @@ const UserLeaderboard = ({ onLoginClick }) => {
     fetchLeaderboard();
   }, []);
 
-  const backendHost = process.env.VITE_BACKEND_HOST;
+  const backendHost ="https://pointmanager-smthing-jgjt.onrender.com";
 
   const fetchLeaderboard = async () => {
     try {
